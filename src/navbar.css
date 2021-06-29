@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    color: #1b1b1b;
+    background-color: #1b1b1b;
+    display: flex;
+    color: white;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    justify-content: space-between;
+    
+
+    
+
+
+}
+.navbarList{
+    display: flex;
+   
+    
+}
+.navbarList a{
+    color: #fff;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+#iconid{
+    background-color: white;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media (max-width:1200px) {
+    #iconid{
+        display: block;
+        color: #fff;
+        background-color: #1b1b1b;
+    }
+    button{
+        display: block;
+    }
+   
+    .navbarList{
+        width: 100%;
+        height: 100vh;
+        background-color: #1b1b1b;
+        position: fixed;
+        color: white;
+        top: 10vh;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s;
+        
+    }
+    #click:checked ~ .navbarList{
+        
+        left: 0%; 
+
+    }
+    #click:checked ~ i:before{
+        content: "akj";
+    }
+    .navbarList li{
+       color: white;
+       margin: 20px; 
+       
+   
+    }
+    
+}
